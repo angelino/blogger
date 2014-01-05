@@ -1,0 +1,15 @@
+<h3>Post a Comment</h3>
+
+<%= form_for [@article, @comment] do |f| %>
+  <div>
+    <%= f.text_field :author_name, placeholder: 'Your name' %>
+  </div>
+
+  <div>
+    <%= f.text_area :body, placeholder: 'Comment...' %>
+  </div>
+
+  <div>
+    <%= f.submit 'Submit' %>
+  </div>
+<% end %>
